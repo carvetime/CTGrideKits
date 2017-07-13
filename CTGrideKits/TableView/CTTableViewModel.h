@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CTTableViewModel : NSObject
+
+-(id)initWithTableView:(UITableView *)tableView;
 
 @end

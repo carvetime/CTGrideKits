@@ -69,6 +69,7 @@
 		6998141C1F170EEC003525C6 /* CTTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTableViewModel.m; sourceTree = "<group>"; };
 		6998141E1F170F03003525C6 /* CTCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionViewModel.h; sourceTree = "<group>"; };
 		6998141F1F170F03003525C6 /* CTCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionViewModel.m; sourceTree = "<group>"; };
+		699814211F171183003525C6 /* CTGrideRegisterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGrideRegisterProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +183,7 @@
 		699814091F170AC2003525C6 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				699814211F171183003525C6 /* CTGrideRegisterProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";

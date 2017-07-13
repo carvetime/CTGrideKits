@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "CTTableViewModel.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) CTTableViewModel *tableViewModel;
 
 @end
 
@@ -16,13 +20,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.view addSubview:self.tableView];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (UITableView *)tableView{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    }
+    return _tableView;
+}
+
+- (CTTableViewModel *)tableViewModel{
+    if (_tableViewModel == nil) {
+        _tableViewModel = [[CTTableViewModel alloc] initWithTableView:self.tableView];
+    }
+    return _tableViewModel;
 }
 
 
