@@ -15,6 +15,12 @@
 		699813E31F1708A4003525C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 699813E11F1708A4003525C6 /* LaunchScreen.storyboard */; };
 		699813EE1F1708A4003525C6 /* CTGrideKitsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 699813ED1F1708A4003525C6 /* CTGrideKitsDemoTests.m */; };
 		699813F91F1708A4003525C6 /* CTGrideKitsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 699813F81F1708A4003525C6 /* CTGrideKitsDemoUITests.m */; };
+		6998140E1F170B8F003525C6 /* CTTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 6998140D1F170B8F003525C6 /* CTTableRow.m */; };
+		699814111F170BB3003525C6 /* CTTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 699814101F170BB3003525C6 /* CTTableSection.m */; };
+		699814141F170BDB003525C6 /* CTCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 699814131F170BDB003525C6 /* CTCollectionItem.m */; };
+		699814171F170BEB003525C6 /* CTCollectionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 699814161F170BEB003525C6 /* CTCollectionSection.m */; };
+		6998141D1F170EEC003525C6 /* CTTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6998141C1F170EEC003525C6 /* CTTableViewModel.m */; };
+		699814201F170F03003525C6 /* CTCollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6998141F1F170F03003525C6 /* CTCollectionViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		699813F41F1708A4003525C6 /* CTGrideKitsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CTGrideKitsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		699813F81F1708A4003525C6 /* CTGrideKitsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGrideKitsDemoUITests.m; sourceTree = "<group>"; };
 		699813FA1F1708A4003525C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6998140C1F170B8F003525C6 /* CTTableRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTableRow.h; sourceTree = "<group>"; };
+		6998140D1F170B8F003525C6 /* CTTableRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTableRow.m; sourceTree = "<group>"; };
+		6998140F1F170BB3003525C6 /* CTTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTableSection.h; sourceTree = "<group>"; };
+		699814101F170BB3003525C6 /* CTTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTableSection.m; sourceTree = "<group>"; };
+		699814121F170BDB003525C6 /* CTCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionItem.h; sourceTree = "<group>"; };
+		699814131F170BDB003525C6 /* CTCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionItem.m; sourceTree = "<group>"; };
+		699814151F170BEB003525C6 /* CTCollectionSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionSection.h; sourceTree = "<group>"; };
+		699814161F170BEB003525C6 /* CTCollectionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionSection.m; sourceTree = "<group>"; };
+		6998141B1F170EEC003525C6 /* CTTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTTableViewModel.h; sourceTree = "<group>"; };
+		6998141C1F170EEC003525C6 /* CTTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTTableViewModel.m; sourceTree = "<group>"; };
+		6998141E1F170F03003525C6 /* CTCollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCollectionViewModel.h; sourceTree = "<group>"; };
+		6998141F1F170F03003525C6 /* CTCollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCollectionViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,7 @@
 		699813C71F1708A4003525C6 = {
 			isa = PBXGroup;
 			children = (
+				699814061F170A28003525C6 /* CTGrideKits */,
 				699813D21F1708A4003525C6 /* CTGrideKitsDemo */,
 				699813EC1F1708A4003525C6 /* CTGrideKitsDemoTests */,
 				699813F71F1708A4003525C6 /* CTGrideKitsDemoUITests */,
@@ -138,6 +157,57 @@
 				699813FA1F1708A4003525C6 /* Info.plist */,
 			);
 			path = CTGrideKitsDemoUITests;
+			sourceTree = "<group>";
+		};
+		699814061F170A28003525C6 /* CTGrideKits */ = {
+			isa = PBXGroup;
+			children = (
+				699814091F170AC2003525C6 /* Protocol */,
+				6998140B1F170AC2003525C6 /* ViewModel */,
+				699814081F170AC2003525C6 /* CollectionView */,
+				6998140A1F170AC2003525C6 /* TableView */,
+			);
+			path = CTGrideKits;
+			sourceTree = "<group>";
+		};
+		699814081F170AC2003525C6 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				6998141E1F170F03003525C6 /* CTCollectionViewModel.h */,
+				6998141F1F170F03003525C6 /* CTCollectionViewModel.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		699814091F170AC2003525C6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6998140A1F170AC2003525C6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6998141B1F170EEC003525C6 /* CTTableViewModel.h */,
+				6998141C1F170EEC003525C6 /* CTTableViewModel.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		6998140B1F170AC2003525C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6998140C1F170B8F003525C6 /* CTTableRow.h */,
+				6998140D1F170B8F003525C6 /* CTTableRow.m */,
+				6998140F1F170BB3003525C6 /* CTTableSection.h */,
+				699814101F170BB3003525C6 /* CTTableSection.m */,
+				699814121F170BDB003525C6 /* CTCollectionItem.h */,
+				699814131F170BDB003525C6 /* CTCollectionItem.m */,
+				699814151F170BEB003525C6 /* CTCollectionSection.h */,
+				699814161F170BEB003525C6 /* CTCollectionSection.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6998141D1F170EEC003525C6 /* CTTableViewModel.m in Sources */,
 				699813DB1F1708A4003525C6 /* ViewController.m in Sources */,
+				699814111F170BB3003525C6 /* CTTableSection.m in Sources */,
+				699814171F170BEB003525C6 /* CTCollectionSection.m in Sources */,
 				699813D81F1708A4003525C6 /* AppDelegate.m in Sources */,
+				699814141F170BDB003525C6 /* CTCollectionItem.m in Sources */,
+				6998140E1F170B8F003525C6 /* CTTableRow.m in Sources */,
+				699814201F170F03003525C6 /* CTCollectionViewModel.m in Sources */,
 				699813D51F1708A4003525C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
